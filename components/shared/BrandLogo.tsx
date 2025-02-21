@@ -1,4 +1,4 @@
-import Brand from '../../public/Brand.svg'
+import Brand from '../../public/brand.svg'
 import { CustomImage } from './CustomImage'
 import { cn } from '@/lib/utils'
 import { useRouter } from 'nextjs-toploader/app'
