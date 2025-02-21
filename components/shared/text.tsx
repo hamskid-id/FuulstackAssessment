@@ -35,9 +35,9 @@ export const Text: React.FC<ITextPropType> = ({
     )
   } else {
     return (
-      <h6 className={style} onClick={clickFunc}>
+      <div className={style} onClick={clickFunc}>
         {children}
-      </h6>
+      </div>
     )
   }
 }
