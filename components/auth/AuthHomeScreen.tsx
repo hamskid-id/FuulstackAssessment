@@ -3,7 +3,7 @@
 import React from "react";
 import { Text } from "../shared/text";
 import { FontSize } from "@/lib/constants";
-import { Logo } from "../shared/Logo";
+import { Logo } from "../shared/BrandLogo";
 import { Button } from "../ui/button";
 import { cn } from "@/lib/utils";
 import { useRouter } from "nextjs-toploader/app";

@@ -5,7 +5,7 @@ import { CustomToast } from "../shared/CustomToast";
 import { ICustomToast } from "../shared/CustomToast";
 import { Text } from "../shared/text";
 import { FontSize } from "@/lib/constants";
-import { Logo } from "../shared/Logo";
+import { Logo } from "../shared/BrandLogo";
 
 interface IAuthLayoutProp extends ICustomToast {
   children: React.ReactNode;
