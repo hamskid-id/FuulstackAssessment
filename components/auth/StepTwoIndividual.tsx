@@ -24,9 +24,7 @@ const defaultValue = {
 export const StepTwoIndividual: React.FC<IStepTwoIndividual> = ({
   setActiveStep,
 }) => {
-  const [toast, setToast] = useState<string | null>(
-    "An error occured Please try again"
-  );
+  const [toast, setToast] = useState<string | null>(null);
   const [phone, setPhone] = useState<string>("");
 
   const form = useForm<z.infer<typeof IndividualStepTwoSchema>>({
@@ -36,7 +34,11 @@ export const StepTwoIndividual: React.FC<IStepTwoIndividual> = ({
 
   function onSubmit(values: z.infer<typeof IndividualStepTwoSchema>) {
     console.log(values);
-    setActiveStep((prev) => prev + 1);
+    if (phone === "") {
+      setToast("Phone Number is required.");
+    } else {
+      setActiveStep((prev) => prev + 1);
+    }
   }
 
   return (

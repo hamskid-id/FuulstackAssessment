@@ -23,9 +23,7 @@ const defaultValue = {
 export const StepTwoCorporate: React.FC<IStepTwoCorporate> = ({
   setActiveStep,
 }) => {
-  const [toast, setToast] = useState<string | null>(
-    "An error occured Please try again"
-  );
+  const [toast, setToast] = useState<string | null>(null);
 
   const form = useForm<z.infer<typeof CorporateStepTwoSchema>>({
     resolver: zodResolver(CorporateStepTwoSchema),

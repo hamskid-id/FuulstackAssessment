@@ -99,7 +99,7 @@ export const SignIn: React.FC = () => {
               </Button>
               <Button
                 type="button"
-                onClick={() => router.back()}
+                onClick={() => router.push('/auth/onboarding')}
                 className={`rounded-[2px] ${FontSize.sm} font-[600] mt-[30px] shadow-none text-center text-black w-full h-[46px] bg-lightgreen`}
               >
                 Back

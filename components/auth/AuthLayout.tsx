@@ -28,7 +28,7 @@ export const AuthLayout: React.FC<IAuthLayoutProp> = ({
         <div className="flex flex-col text-center items-center">
           {title && (
             <Text
-              style={`mb-[7px] ${FontSize.xl} font-[400] leading-[35.16px]`}
+              style={`mb-[7px] md:text-[30px] text-[25px] font-[400] leading-[35.16px]`}
             >
               {title}
             </Text>

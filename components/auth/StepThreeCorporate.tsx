@@ -23,7 +23,7 @@ export const StepThreeCorporate: React.FC<IStepThreeCorporate> = ({
   setActiveStep,
 }) => {
   const [toast, setToast] = useState<string | null>(
-    "An error occured Please try again"
+ null
   );
 
   const form = useForm<z.infer<typeof CorporateStepThreeSchema>>({
